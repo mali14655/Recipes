@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 8vh;
+    /* width: 90vw; */
+    border-bottom:0.5px solid grey ;
+    /* background-color: rgb(209, 202, 193); */
+}
+.name{
+    height: 100%;
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.recipe{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* border: 1px solid black; */
+}
+.detpic{
+    background-color: aqua;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+#inst{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 2vh;
+    /* background-color: rgb(242, 242, 242); */
+    /* min-height: 100vh; */
+    /* width: 50%; */
+    /* box-shadow: 0px 0px 2px grey; */
+}
+.inst1{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex: 1 1 200px;
+    box-shadow: 0px 0px 2px grey;
+    background-color: antiquewhite;
+    min-height: 100vh;
+    width: 50%;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position:center;
+}
+
+#item{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 20vw;
+    height: 5vh;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 1vh;
+    padding-left: 1vh;
+
+}
+button{
+    height: 4vh;
+    width: 8vw;
+    border-radius: 1vh;
+    border: none;
+    color: white;
+    background-color: rgb(66, 66, 247);
+}
+button:hover{
+    cursor: pointer;
+}
+
+.firsth1{
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+p{
+    line-height: 4vh;
+}
+
+.li{
+    margin: 1vh;
+}
+
+@media (max-width: 750px) {
+    .inst1 {
+        flex: 1 1 100%; /* On smaller screens, each item takes the full width */
+        
+    }
+    .image{
+        object-fit: contain;
+        object-position: top;
+    }
+    .inst2{
+        min-height: 0;
+    }
+    button{
+        width: 26vw;
+        height: 5vh;
+    }
+    #item{
+        height: 6vh;
+        width: 40vw;
+    }
+    .name{
+        width: 25%;
+    }
+   
+}
